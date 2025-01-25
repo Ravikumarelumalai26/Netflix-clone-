@@ -1,0 +1,105 @@
+ .hero {
+       position: relative;
+    }
+    .banner-img {
+       width: 100%;
+       
+       mask-image: linear-gradient(to right, transparent, black 75%);
+       -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+       
+     }
+     .hero-caption {
+       position: absolute;
+       width: 100%;
+      padding-left: 4%;
+      bottom: 0;
+     }
+     .caption-img {
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 30px;
+      }
+      .hero-caption p  {
+        max-width: 700px;
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+      .hero-btns {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 50px;
+      }
+      
+      .hero-btns .btn img {
+        width: 25px;
+      }
+      
+      .hero-btns .btn {
+        border: 0;
+        outline: 0;
+        padding: 8px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        background: white;
+         border-radius: 4px;
+         cursor: pointer;
+      }
+      .hero-btns .btn.dark-btn {
+        color: #fff;
+        background: #6d6d6eb3;
+      }
+      
+      .hero-btns .btn:hover {
+        background: #ffffffbf;
+      }
+      
+      .hero-btns .btn.dark-btn:hover {
+        background: #6d6d6e66;
+      }
+      
+      .more-cards{
+        padding-left: 4%;
+        font-size: xx-small;
+      }
+      .title {
+        font-family: 'Dancing Script', cursive; 
+        font-size: 3rem;
+        font-weight: bold;
+        color: hsl(0, 14%, 95%); 
+        margin-top: 40px;
+        letter-spacing: -0.03em; 
+        text-shadow: 1px 1px 0 #000; 
+        
+        transform: skewX(-10deg) translateY(-50px); 
+      }
+      .no-horizontal-scroll {
+        overflow-x: hidden;
+      }
+      @media (max-width: 768px) {
+        /* Styles for small screens (e.g., smartphones) */
+        .hero {
+          /* Adjust hero section styles for smaller screens */
+          padding: 20px; 
+        }
+      
+        .banner-img {
+         
+          height: auto; 
+        }
+      
+        .hero-caption {
+         
+          padding-left: 2%; 
+        }
+      
+        .hero-caption p {
+         
+          font-size: 12px;
+          margin-bottom: 15px;
+        }
+      
+      
+      }
